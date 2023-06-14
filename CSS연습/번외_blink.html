@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blink Effects</title>
+  <style>
+   @keyframes blink-effect{
+    50% {
+      opacity: 0;
+    }
+   }
+
+   .blinking {
+    animation : blink-effect 1s step-end infinite;
+   }
+  </style>
+</head>
+<body>
+  <p class="blinking">Je m'appelle Jaehyeong.</p>
+</body>
+</html>
