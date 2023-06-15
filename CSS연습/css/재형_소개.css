@@ -8,7 +8,15 @@ p {
   font-weight: bold;
 }
 
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
 
+.Blink {
+  animation: blink-effect 1s step-end infinite;
+}
 
 
 @media screen and (max-width: 768px) {
