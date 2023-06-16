@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non Structive allocation</title>
+</head>
+<body>
+  <div id="name"></div>
+</body>
+<script>
+  const ironMan = {
+    name: 'Tony Stark',
+    actor: 'Robert Downey Junior',
+    alias: 'Iron Man'
+  }
+  const {name, actor, alias} = ironMan;
+  console.log(name);
+  console.log(actor);
+  console.log(alias);
+
+  const onChange = (event) => {
+    const {target : {value}} = evnet;
+    console.log(value);
+  }
+</script>
+</html>
