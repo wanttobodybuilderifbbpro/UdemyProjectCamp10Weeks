@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript</title>
+</head>
+<body>
+  <h1 id="hello"></h1>
+  <h1 id="name"></h1>
+  <div id="demo"></div>
+</body>
+<script>
+ const hello = document.getElementById("hello");
+ function myFunction(p1, p2){
+  return p1 * p2;
+ }
+ console.log(myFunction(3, 4));
+ let values = myFunction(3, 4);
+ hello.innerText= values;
+
+
+ const name = document.getElementById("name");
+ console.log(name);
+
+ const hoon = {
+  name: "donghun",
+  live: "hongdae",
+ }
+
+ console.log(hoon.name);
+ console.log(hoon.live);
+
+ name.innerText = hoon.live;
+
+
+ const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+ };
+ console.log(person.fullName);
+ hello.innerHTML = person.fullName;
+
+ 
+//1
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+console.log(text);
+console.log(length);
+
+//2
+let text2 = "Apple, Banana, Kiwi";
+let part = text2.slice(7, 13);
+console.log(text2);
+console.log(part);
+
+//3 
+let text3 = "Please visit Microsoft!";
+let newText = text3.replace("Microsoft", "W3Schools");
+console.log(text3);
+console.log(newText);
+
+
+//JavaScript 문자열 메서드
+let text11 = "Hello World!";
+let text22 = text11.toUpperCase();
+let text33 = text11.toLowerCase();
+console.log(text22);
+console.log(text33);
+
+
+let text01 = "Hello";
+let text02 = "World";
+let text03 = text01.concat(" ", text02);
+console.log(text03);
+
+//자바스크립트 문자열 검색
+let text001 = "Please locate where 'locate' occurs!";
+let index = text001.lastIndexOf("John");
+
+//시작 위치로 두 번째 매개변수를 허용
+let index1 = text.indexOf("locate", 15);
+
+console.log(index);
+console.log(index1);
+
+
+//Templet literal
+let lit_text = `Hello World!`;
+console.log(lit_text);
+
+//배열을 문자열로 변환
+const fruits = ["Banana", "Orange", "Pomme", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+console.log(fruits);
+</script>
+</html>
