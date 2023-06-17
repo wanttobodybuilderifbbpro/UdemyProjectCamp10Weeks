@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>세이프홈즈 랜딩페이지 클론코딩</title>
+  <link rel="stylesheet" href="세이프홈즈_랜딩페이지_CSS/랜딩페이지.css">
 </head>
 <body>
   <header>
     <img src="https://images.roa.ai/company_logo/ZQ2GxQjqmm.png" alt="세이프홈즈로고" width="200" height="150">
-    <p>문의하기</p>
+    <p style="color: skyblue"><b>문의하기</b></p>
     <form>
-      <input type="button" value="start">
+      <input type="button" onclick='newPage()' value="시작">
     </form>
+    <script src="세이프홈즈_랜딩페이지_자바스크립트/랜딩페이지.js"></script>
   </header>
 
   <main>
@@ -19,7 +21,7 @@
       <img src="./img/img1.png">
     </section>
     <section>
-      <p>세이프홈즈, 전/월세 보증금 지킴이 서비스입니다.</p>
+      <p class="blink" style="color:blue"><b>세이프홈즈, 전/월세 보증금 지킴이 서비스입니다.</b></b></p>
     </section>
     <section>
       <img src="./img/img2.png" width="293" height="233">
@@ -70,12 +72,13 @@
   </main>
 
   <footer>
-    <p><b>(주)세이프홈즈</b></p>
-    <p>
+    <p style="color:black"><b>(주)세이프홈즈</b></p>
+    <p style="color:black">
       사업자 등록 번호 : 250-26-01109 | 대표 : 정동훈<br>
       경기도 성남시 수정구 대왕판교로 815 기업지원허브 혁신기술존 260-3호<br>
       문의 메일: safehomes.kr@gmail.com
     </p>
   </footer>
 </body>
+
 </html>
