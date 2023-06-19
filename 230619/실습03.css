@@ -1,0 +1,15 @@
+.add {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete{
+  background-color: #FF3300;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
