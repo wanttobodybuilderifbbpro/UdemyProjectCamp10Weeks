@@ -25,3 +25,4 @@ function clickImg(){
   let random = Math.floor(Math.random() * images.length);
   image.src = images[random];
 }
+
