@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="weather"></div> <!--값을 노출 시키기 위함.-->
+  <script>
+    const API_KEY = "15f8fbf5168d6da001f1e3c2c4b76277";
+
+    function getWeather(lat, lon){
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+      ).then(function (response){
+        console.log(response);
+        return response.json()  //response에 있는 json함수 실행
+      }).then(function(json){
+        console.log(json); //json받아옴
+      });
+    }
+    
+    function successHandle(pos){
+      const latitude = pos.coords.latitude;
+      const longitude = pos.coords.longitude;
+
+      getWeather(latitude, longitude);
+    }
+
+    function errorHandle(){
+      console.log("error!")
+    }
+  </script>
+</body>
+</html>
