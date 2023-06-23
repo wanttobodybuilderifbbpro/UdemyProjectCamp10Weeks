@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const root = document.getElementById("root");
+    function UesrProFile({name , age , work}){
+      return (
+        <div>
+          <h2>이름: {name}</h2>
+          <p>나이: {age}</p>
+          <p>나는 {work}하는 사람입니다</p>
+        </div>
+      )
+    }
+
+    function Container(){
+      return(
+        <div>
+          <UesrProFile name="박재형" age={24} work="React 강의" />
+          <UesrProFile name="홍길동" age={26} work="백앤드 강의" />
+        </div>  
+      );
+    }
+    ReactDOM.render(<Container />, root);
+  </script>
+</body>
+</html>

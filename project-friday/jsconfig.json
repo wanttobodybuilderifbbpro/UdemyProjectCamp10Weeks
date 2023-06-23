@@ -1,0 +1,6 @@
+{
+  "coompierOptions":{
+    "baseUrl": "src"
+  },
+  "includes" : ["src"]
+}
