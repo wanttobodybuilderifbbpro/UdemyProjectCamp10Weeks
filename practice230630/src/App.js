@@ -1,10 +1,11 @@
 import MovieSearch from "./movieSearch";
+import MovieApp from "./usePaginationFull";
 
 function App() {
   return(
     <div>
-      {/* <Practice04 /> */}
       <MovieSearch />
+      {/* <MovieApp /> */}
     </div>
   ); 
   
