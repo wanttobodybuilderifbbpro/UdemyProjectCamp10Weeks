@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Route } from 'react-router-dom';
 
 const useSearchMovies = () => {
   const [searchQuery, setSearchQuery] = useState('');

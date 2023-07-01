@@ -1,6 +1,7 @@
 import React from 'react';
 import usePagination from './usePaginationFull';
-
+import { Link } from 'react-router-dom';
+ 
 const MovieApp = () => {
   const totalPages = 10; // 전체 페이지 수
   const { currentPage, goToPage, nextPage, previousPage } = usePagination(totalPages);
